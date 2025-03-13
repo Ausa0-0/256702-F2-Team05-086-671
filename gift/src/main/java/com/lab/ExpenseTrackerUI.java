@@ -63,7 +63,7 @@ public class ExpenseTrackerUI {
         // สร้าง JPanel สำหรับแสดงยอดเงิน
         JPanel balancePanel = new JPanel();
         balancePanel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10)); // เพิ่มระยะห่างรอบขอบ
-        balanceLabel = new JLabel("Balance: ฿0 💵");
+        balanceLabel = new JLabel("Balance: ฿0 ");
         balanceLabel.setFont(new Font("SansSerif", Font.BOLD, 18)); // ปรับขนาดฟอนต์
         balancePanel.add(balanceLabel);
  
