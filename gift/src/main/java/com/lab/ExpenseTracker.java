@@ -26,7 +26,7 @@ public class ExpenseTracker extends Application {
     //คลาสหลัก
     @Override
     public void start(Stage primaryStage) {
-        primaryStage.setTitle("💰 SaAndGiftZA007");
+        primaryStage.setTitle("💰 SA X AUANZA 888");
         
         // Input Panel
         GridPane inputPane = new GridPane();
@@ -41,11 +41,11 @@ public class ExpenseTracker extends Application {
         descField = new TextField();
         amountField = new TextField();
         
-        Button addButton = new Button("Add Transaction ➕");
-        addButton.setStyle("-fx-background-color: #329632; -fx-text-fill: white;");
+        Button addButton = new Button("Add ➕");
+        addButton.setStyle("-fx-background-color:rgb(63, 134, 85); -fx-text-fill: white;");
         
-        Button clearButton = new Button("Clear Data 🧹");
-        clearButton.setStyle("-fx-background-color: #c83232; -fx-text-fill: white;");
+        Button clearButton = new Button("Clear 🧹");
+        clearButton.setStyle("-fx-background-color:rgb(163, 70, 70); -fx-text-fill: white;");
         
         inputPane.add(new Label("Type: 📌"), 0, 0);
         inputPane.add(typeBox, 1, 0);
@@ -79,7 +79,7 @@ public class ExpenseTracker extends Application {
         
         VBox balancePane = new VBox(balanceLabel);
         balancePane.setPadding(new Insets(10));
-        balancePane.setStyle("-fx-background-color: #f0f0f0; -fx-alignment: center;");
+        balancePane.setStyle("-fx-background-color:rgb(212, 169, 147); -fx-alignment: center;");
         
         // Main Layout
         VBox mainLayout = new VBox(10, inputPane, filterPane, scrollPane, balancePane);
