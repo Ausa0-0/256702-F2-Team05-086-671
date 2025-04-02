@@ -26,7 +26,7 @@ public class ExpenseTracker extends Application {
     
     @Override
     public void start(Stage primaryStage) {
-        primaryStage.setTitle("💰 SA X AUANZA 888");
+        primaryStage.setTitle("💰CHICKKIDEW888");
         
         
         GridPane inputPane = new GridPane();
