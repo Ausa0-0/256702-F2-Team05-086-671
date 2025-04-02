@@ -13,7 +13,7 @@ import java.util.HashMap;
 import java.util.List;
 
 public class ExpenseTracker extends Application {
-    //สร้างตัวแปร
+    
     private TextField descField, amountField;
     private ComboBox<String> typeBox, filterBox;
     private TextArea displayArea;
@@ -23,12 +23,12 @@ public class ExpenseTracker extends Application {
     private HashMap<String, Double> dailyExpenses = new HashMap<>();
     private ArrayList<Transaction> transactions = new ArrayList<>();
 
-    //คลาสหลัก
+    
     @Override
     public void start(Stage primaryStage) {
         primaryStage.setTitle("💰 SA X AUANZA 888");
         
-        // Input Panel
+        
         GridPane inputPane = new GridPane();
         inputPane.setPadding(new Insets(15));
         inputPane.setHgap(10);
@@ -56,7 +56,7 @@ public class ExpenseTracker extends Application {
         inputPane.add(addButton, 0, 3);
         inputPane.add(clearButton, 1, 3);
         
-        // Filter Panel
+        
         filterBox = new ComboBox<>();
         filterBox.getItems().addAll("All", "Income 🟢", "Expense 🔴");
         filterBox.setValue("All");
@@ -65,7 +65,7 @@ public class ExpenseTracker extends Application {
         HBox filterPane = new HBox(10, new Label("Filter: 🔍"), filterBox);
         filterPane.setPadding(new Insets(10));
         
-        // Display Panel
+        
         displayArea = new TextArea();
         displayArea.setEditable(false);
         displayArea.setPrefHeight(200);
@@ -73,7 +73,7 @@ public class ExpenseTracker extends Application {
         ScrollPane scrollPane = new ScrollPane(displayArea);
         scrollPane.setFitToWidth(true);
         
-        // Balance Panel
+        
         balanceLabel = new Label("Balance: ฿0 💵");
         balanceLabel.setStyle("-fx-font-size: 16px; -fx-font-weight: bold;");
         
@@ -81,11 +81,11 @@ public class ExpenseTracker extends Application {
         balancePane.setPadding(new Insets(10));
         balancePane.setStyle("-fx-background-color:rgb(212, 169, 147); -fx-alignment: center;");
         
-        // Main Layout
+        
         VBox mainLayout = new VBox(10, inputPane, filterPane, scrollPane, balancePane);
         mainLayout.setPadding(new Insets(10));
         
-        // Button Actions
+        
         addButton.setOnAction(e -> addTransaction());
         clearButton.setOnAction(e -> clearData());
         
